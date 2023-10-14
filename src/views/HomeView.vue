@@ -35,15 +35,12 @@ export default {
     const queryIP = ref("");
     const ipInfo = ref(null);
 
-    const minLatitude = -45;  // Minimum latitude limit
-    const maxLatitude = 45;   // Maximum latitude limit
-    const minLongitude = -90; // Minimum longitude limit
-    const maxLongitude = 90;  // Maximum longitude limit
+    const minLatitude = -40;
+    const maxLatitude = 50;
+    const minLongitude = -80;
+    const maxLongitude = 100;
 
-    // Generate random latitude within the specified range
     const randomLatitude = Math.random() * (maxLatitude - minLatitude) + minLatitude;
-
-    // Generate random longitude within the specified range
     const randomLongitude = Math.random() * (maxLongitude - minLongitude) + minLongitude;
 
 
